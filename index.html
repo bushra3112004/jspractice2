@@ -27,44 +27,45 @@
             document.write("b is greater than a<br>")
         }
 
-         const letter=k;
-                if(letter == a){
+         const letter='k';
+                if(letter == 'a'){
                     console.log("letter is a <br>");
                 }
-                else if(letter==b){
+                else if(letter=='b'){
                     console.log("letter is b<br>");
                 }
-                else if(letter==c){
+                else if(letter=='c'){
          console.log("letter is c<br>");
                 }
-                else if(letter==d){
+                else if(letter=='d'){
                    console.log("letter is d<br>");
                 }
                 else{
                      console.log("invalid!!");
                 }
 
-        const mark=parseInt("enter your mark:<br>");
-         if(mark>90){
-            document.write("you get O grade");
+        const mark=parseInt(prompt("enter your mark: "));
+        
+        if(mark>90){
+            console.log("you get O grade");
         }
         else if(mark<90 && mark>80){
-            document.write("you get A+ grade");
+              console.log ("you get A+ grade");
         }
         else if(mark<80 && mark>70){
-            document.write("you get A grade");
+               console.log("you get A grade");
         }
         else if(mark<70 && mark>60){
-            document.write("you get B grade");
+               console.log("you get B grade");
         }
         else if(mark<60 && mark>50){
-            document.write("you get C grade");
+               console.log("you get C grade");
         }
         else if(mark<50 && mark>35){
-            document.write("you are passed");
+               console.log("you are passed");
         }
         else{
-            document.write("you are failed!!!");
+               console.log("you are failed!!!");
         }        
     </script>
 </head>
