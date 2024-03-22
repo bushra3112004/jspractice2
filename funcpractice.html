@@ -7,8 +7,42 @@
 </head>
 <body>
     <script>
+        const r=2;
+        const area=2*3.14*r;
+      console.log("area of circle : ${area}");
 
-        
+        //argument and return
+        function areaofcircle(radius){
+            const area=2*3.14*radius;
+            return area;
+        }
+        const area1 =areaofcircle(10);
+        console.log('area of circle : ${area1}');
+       
+         
+        //argument but not return
+        function areaofcircle(radius1){
+            const area=2*3.14*radius1;
+            console.log('area of circle : ${area}');
+        }
+        areaofcircle(10);
+
+        //no argument but return
+        const radius2=10;
+        function areaofcircle(){
+            const area=2*3.14*radius2;
+            return area;
+        }
+        const A =areaofcircle();
+        console.log('area of circle: ${A}')
+
+        //no argument and no return
+     const radius3 = 10;
+    function areaofcircle() {
+        const area = 2*3.14*radius3;
+        console.log(`Area of circle :${area} `);
+    }
+    areaofcircle();
     </script>
     
 </body>
