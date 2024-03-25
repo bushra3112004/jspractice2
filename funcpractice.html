@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Function practice</title>
 </head>
 <body>
     <script>
         const r=2;
-        const area=2*3.14*r;
-      console.log("area of circle : ${area}");
-
+       const area=3.14*r*r;
+      console.log (`area of circle: ${area}`);
+    
         //argument and return
         function areaofcircle(radius){
-            const area=2*3.14*radius;
-            return area;
+           const area1=3.14*radius*radius;
+            return area1;
         }
-        const area1 =areaofcircle(10);
-        console.log('area of circle : ${area1}');
+        const Area =areaofcircle(10);
+     console.log(`area of circle : ${Area}`);
        
          
-        //argument but not return
-        function areaofcircle(radius1){
-            const area=2*3.14*radius1;
-            console.log('area of circle : ${area}');
-        }
-        areaofcircle(10);
+       // argument but not return
+        function areaofcircle1(radius1){
+           const area1=3.14*radius1*radius1;
+            console.log (`area of circle1 : ${area1}`);
+      }
+        areaofcircle1(10);
 
-        //no argument but return
+       // no argument but return
         const radius2=10;
-        function areaofcircle(){
-            const area=2*3.14*radius2;
-            return area;
+        function areaofcircle2() {
+            const area2=3.14*radius2*radius2;
+            return area2;
        }
-     const A =areaofcircle();
-     console.log('area of circle: ${A}')
+    const A1 =areaofcircle2();
+    console.log (`area of circle2 : ${A1}`);
 
         //no argument and no return
-     const radiuss = 10;
-    function areaofcircle() {
-        const area = radiuss*radiuss;
-        console.log(`Area of circle :${area} `);
+     const radius3 = 10;
+    function areaofcircle3() {
+        const area3 = 3.14*radius3*radius3;
+       console.log(`Area of circle3 : ${area3}`);
     }
-    areaofcircle();
+    areaofcircle3();
     </script>
-    
 </body>
 </html>
