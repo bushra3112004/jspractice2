@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Age find calculator</title>
+</head>
+
+<body>
+    <label for="birthdate">enter your birthdate: </label>
+    <input type="date" id="birthdate">
+    <button onclick="calculateAge()">calculate age</button>
+    <div id="result"></div>
+</body>
+<script>
+    function calculateAge() {
+        const birthDateInput = document.getElementById('birthdate').value;
+        const birthdate = new Date(birthDateInput);
+        const now = new Date();
+
+        let age = now.getFullYear() - birthdate.getFullYear();
+
+        const monthDiff = now.getMonth() - birthdate.getMonth();
+
+        if (monthDiff < 0 || (monthDiff == 0 && now.getDate() < birthdate.getDate())) {
+            age--;
+        }
+        document.getElementById('result').innerText = `your age is ${age}`;
+
+    }
+
+</script>
+
+</html>
